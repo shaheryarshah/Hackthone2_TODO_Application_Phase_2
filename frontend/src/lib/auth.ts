@@ -5,7 +5,7 @@
  * with the backend FastAPI JWT authentication system.
  */
 
-import { createAuthClient } from 'better-auth';
+import { createAuthClient } from 'better-auth/react';
 import type { User, AuthResponse } from '@/types';
 import axios from 'axios';
 
