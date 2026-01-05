@@ -7,6 +7,7 @@
 
 import { createAuthClient } from 'better-auth';
 import type { User, AuthResponse } from '@/types';
+import axios from 'axios';
 
 // API configuration
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
@@ -145,7 +146,6 @@ export const authHelpers = {
  * This wraps axios to automatically include the Bearer token
  * in all authenticated requests.
  */
-import axios from 'axios';
 
 export const apiClient = axios.create({
   baseURL: API_URL,
