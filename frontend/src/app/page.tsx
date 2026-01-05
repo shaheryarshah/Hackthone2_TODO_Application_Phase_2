@@ -30,7 +30,7 @@ export default function Home() {
     sortRef.current = sort;
   }, [sort]);
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://hackthone-todo-pii-back.vercel.app/';
 
   const getAuthHeaders = useCallback((): Record<string, string> => {
     const token = localStorage.getItem('access_token');
