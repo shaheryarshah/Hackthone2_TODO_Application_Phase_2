@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1, || https://hackthone-todo-pii-back.vercel.app/api/v1';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
