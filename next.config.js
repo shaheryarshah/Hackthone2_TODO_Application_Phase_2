@@ -7,8 +7,8 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    appDir: false  // ❗ disable App Router
-  }
+    appDir: false, // 🔥 disables RSC completely
+  },
 }
 
 module.exports = nextConfig
